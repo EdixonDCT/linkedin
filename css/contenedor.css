@@ -1,0 +1,50 @@
+@import url(style.css);
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "space space space"
+    "sidebar post aside";
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-activo);
+}
+.space {
+  grid-area: space;
+}
+/* SIDEBAR */
+.sidebar {
+  grid-area: sidebar;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.sidebar__info {
+  display: grid;
+  grid-template-columns: 25px 100px 50px 125px;
+  grid-template-rows: 75px 50px 200px 50px;
+  justify-content: end;
+  background-color: var(--color-header);
+}
+.sidebar__banner {
+  height: 75px;
+  width: 300px;
+  grid-row: 1 / 5;
+  grid-column: 1 / 2;
+}
+.sidebar__perfil {
+  height: 100px;
+  width: 100px;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin-top: 25px;
+  border-radius: 50%;
+  border: 5px solid var(--color-header);
+}
+.post {
+  grid-area: post;
+}
+.aside {
+  grid-area: aside;
+}
