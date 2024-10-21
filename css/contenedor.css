@@ -19,12 +19,15 @@
   grid-area: sidebar;
   margin-right: 20px;
   margin-top: 20px;
+  display: grid;
+  justify-content: end;
 }
 .sidebar__info {
+  width: 300px;
+  height: 350px;
   display: grid;
   grid-template-columns: 25px 100px 50px 125px;
-  grid-template-rows: 75px 50px 200px 50px;
-  justify-content: end;
+  grid-template-rows: 75px 50px 175px 50px;
   background-color: var(--color-header);
 }
 .sidebar__banner {
@@ -41,6 +44,107 @@
   margin-top: 25px;
   border-radius: 50%;
   border: 5px solid var(--color-header);
+}
+.sidebar__descripcion {
+  grid-row: 3 / 5;
+  grid-column: 2 / 5;
+}
+.sidebar__nombre {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-texto);
+}
+.sidebar__subtitulo {
+  font-size: 16px;
+  color: var(--color-subtexto);
+}
+.sidebar__vistas {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.sidebar__info_perfil {
+  color: var(--color-subtexto);
+}
+.sidebar__numeros {
+  text-align: end;
+  margin-right: 10px;
+  color: var(--color-botones);
+}
+.sidebar__subcripcion {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--color-subtexto);
+  display: flex;
+  justify-content: space-evenly;
+  grid-row: 4 / 5;
+  grid-column: 1 / 5;
+}
+.sidebar__raya {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-linea);
+  grid-row: 4 / 5;
+  grid-column: 1 / 5;
+}
+.sidebar__raya--vertical {
+  margin-top: -5px;
+  height: 40px;
+  width: 2px;
+  background-color: var(--color-linea);
+}
+.sidebar__raya--sidebar {
+  margin-left: -20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 2px;
+  width: 115%;
+  background-color: var(--color-linea);
+}
+.sidebar__icono {
+  font-size: 20px;
+  color: var(--color-subcripcion);
+}
+.sidebar__icono--premium {
+  font-size: 20px;
+  color: var(--color-premium);
+}
+.sidebar__icono--historial {
+  font-size: 20px;
+  color: var(--color-botones);
+  font-weight: bold;
+  margin-right: 10px;
+}
+.sidebar__historial {
+  width: 300px;
+  height: 666px;
+  margin-top: 15px;
+  background-color: var(--color-header);
+  padding: 20px;
+}
+.sidebar__titulo {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-subtexto);
+}
+.sidebar__lista {
+  margin-top: 10px;
+  font-size: 12px;
+  text-transform: none;
+  font-weight: normal;
+  padding: 2px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.sidebar__lista:hover {
+  background-color: var(--color-hover);
+}
+.sidebar__ver_mas {
+  display: flex;
+  justify-content: center;
+  color: var(--color-botones);
 }
 .post {
   grid-area: post;

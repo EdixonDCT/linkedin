@@ -9,14 +9,19 @@
 :root {
   --color-transparente: rgba(255, 255, 255, 0);
   --color-texto: #000000;
+  --color-submenu: #222222;
   --color-sombra: rgba(0, 0, 0, 0.1);
   --color-subtexto: #5f5f5f;
+  --color-lila: #c9dbf8;
+  --color-linea: #cccccc;
   --color-header: #ffffff;
   --color-fondo: #f4f2ee;
   --color-hover: #edf3f8;
   --color-botones: #0077b7;
   --color-activo: #41db51;
   --color-inactivo: #eb324e;
+  --color-premium: #ea9900;
+  --color-subcripcion: #045be6;
 }
 /* HEADER */
 .header {
@@ -26,7 +31,7 @@
   background-color: var(--color-header);
   color: var(--color-subtexto);
   box-shadow: 5px 5px 10px var(--color-sombra);
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 /* HEADER BUSCADOR */
@@ -88,6 +93,7 @@
   margin-left: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  cursor: pointer;
 }
 .header__imagen {
   height: 45px;
@@ -124,4 +130,71 @@
 }
 .header__icono:hover .header__subrayado {
   width: 100px;
+}
+.header__menu_despegable {
+  margin: 100px auto;
+  width: 300px;
+  height: 440px;
+  padding: 20px;
+  background-color: var(--color-submenu);
+  margin-top: -1070px;
+  margin-right: 365px;
+}
+.header__menu_profile--flex {
+  display: flex;
+  margin-top: 10px;
+}
+.header__menupfp {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.header__menu_titulo {
+  font-size: 20px;
+  color: var(--color-header);
+}
+.header__link {
+  text-decoration: none;
+  color: var(--color-lila);
+}
+.header__cubito {
+  margin-top: 20px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-header);
+}
+.header__circulo {
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-hover);
+  border-radius: 100%;
+  padding-left: 7px;
+  color: var(--color-subtexto);
+  margin: auto auto;
+}
+.header__menu_grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 60px 180px 30px 30px;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+  height: 270px;
+  width: 60px;
+}
+.header__gridtext {
+  color: var(--color-header);
+  font-size: 14px;
+  margin: auto 10px;
+}
+.header__flecha {
+  font-size: 20px;
+  margin: auto;
+  color: var(--color-header);
+  text-decoration: none;
+}
+.header__grid_icon {
+  font-size: 28px;
+  margin: auto 0;
+  color: var(--color-submenu);
+  margin-left: -255px;
 }
