@@ -9,7 +9,7 @@
     "sidebar post aside";
   height: 100%;
   width: 100%;
-  background-color: var(--color-activo);
+  background-color: var(--color-fondo);
 }
 .space {
   grid-area: space;
